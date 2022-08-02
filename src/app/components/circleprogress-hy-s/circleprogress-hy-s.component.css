@@ -1,0 +1,20 @@
+circle-progress {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 766px){
+    .skillCircle {
+        margin: 20px;
+    }
+}
