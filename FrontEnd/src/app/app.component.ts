@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { persona } from './model/persona.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectoFinal';
+  persona: persona = new persona("", "", "");
 }
