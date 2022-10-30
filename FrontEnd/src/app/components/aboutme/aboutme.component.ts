@@ -13,6 +13,8 @@ export class AboutmeComponent implements OnInit {
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data})
-  }
+  }  
 
 }
+
+

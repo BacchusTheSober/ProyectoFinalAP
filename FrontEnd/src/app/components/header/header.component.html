@@ -4,7 +4,8 @@
       <a href=""><img src="../assets/facebook.png" class="logosocial img-fluid"></a>
       <a href=""><img src="../assets/github.png" class="logosocial img-fluid"></a>
       <a href=""><img src="../assets/instagram.png" class="logosocial img-fluid"></a>
-      <button type="button" class="btn btn-outline-light" (click)='login()'>LOG IN</button>
+      <button type="button" class="btn btn-outline-light" (click)='login()' *ngIf="!isLogged">LOG IN</button>
+      <button type="button" class="btn btn-outline-light" (click)='onLogOut()' *ngIf="isLogged">CERRAR SESION</button>
     </div>
   </div>
   <img src="../assets/rplace.jpg" alt="pixelart" class="banner">

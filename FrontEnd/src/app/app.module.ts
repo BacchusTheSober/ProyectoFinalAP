@@ -9,7 +9,11 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormAcademicaComponent } from './components/form-academica/form-academica.component';
-import { HomeComponent } from './components/home/home.component'
+import { HomeComponent } from './components/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from 'src/service/interceptor-service';
+import { NewExperienciaComponent } from './components/form-academica/new-experiencia.component';
+import { EditExperienciaComponent } from './components/form-academica/edit-experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +23,20 @@ import { HomeComponent } from './components/home/home.component'
     LoginComponent,
     HeaderComponent,
     FormAcademicaComponent,
-    HomeComponent
+    HomeComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

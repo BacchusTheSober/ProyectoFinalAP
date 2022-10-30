@@ -2,6 +2,14 @@ body {
     display: flex;
 }
 
+i {
+    margin-right: 5px;
+}
+
+table {
+    color:beige
+}
+
 .header {
     display: flex;
     justify-content: space-between;
