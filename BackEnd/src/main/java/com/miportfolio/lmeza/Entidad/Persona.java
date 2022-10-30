@@ -17,7 +17,7 @@ public class Persona {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     
     @NotNull
     @Size(min = 1, max = 50, message = "No cumple con los parametros /nombre/")
@@ -30,13 +30,34 @@ public class Persona {
     @NotNull
     @Size(min = 1, max = 50, message = "No cumple con los parametros /url_img/")
     private String url_img;
+    
+    @NotNull
+    private String descripcion;
 
-    public Long getId() {
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, String url_img, String descripcion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.url_img = url_img;
+        this.descripcion = descripcion;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public String getNombre() {

@@ -8,5 +8,5 @@ import { persona } from './model/persona.model';
 })
 export class AppComponent {
   title = 'ProyectoFinal';
-  persona: persona = new persona("", "", "");
+  persona: persona = null;
 }
